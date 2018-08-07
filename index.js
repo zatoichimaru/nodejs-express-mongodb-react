@@ -20,7 +20,7 @@ app.use(express.static('public'));
 
 app.use(bodyParser.json());
 
-app.use('/api', require('./routes/api'));
+app.use('/api', require('./routes/client'));
 
 //listar a requisição
 app.listen(process.env.port || 4000, function(){
